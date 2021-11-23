@@ -390,8 +390,8 @@ foreach ($customer in $customers) {
 			 </div>"
       
    	
-	$result = Set-HuduMagicDash -title "Microsoft 365 - $($hududomain[0].company_name)" -company_name $company_name -message "$($licensedUsers.count) Licensed Users" -icon "fab fa-microsoft" -content $body -shade "success"	
-		write-host "https://$defaultdomain Found in Hudu and MagicDash updated for $($hududomain[0].company_name)"  -ForegroundColor Green	
+	$result = Set-HuduMagicDash -title "Microsoft 365 - $defaultdomain" -company_name $company_name -message "$($licensedUsers.count) Licensed Users" -icon "fab fa-microsoft" -content $body -shade "success"	
+		write-host "https://$defaultdomain Found in Hudu and MagicDash updated for $defaultdomain"  -ForegroundColor Green	
 		
 	#Import Domains if enabled
 	if ($importDomains) {
